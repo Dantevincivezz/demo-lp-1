@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+  0% {
+    background: linear-gradient(
+      0deg,
+      rgba(14, 165, 233, 0.41) 10%,
+      rgba(232, 121, 249, 0.26) 90%
+    );
+  }
+  25% {
+    background: linear-gradient(
+      90deg,
+      rgba(14, 165, 233, 0.41) 10%,
+      rgba(232, 121, 249, 0.26) 90%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      180deg,
+      rgba(14, 165, 233, 0.41) 10%,
+      rgba(232, 121, 249, 0.26) 90%
+    );
+  }
+  75% {
+    background: linear-gradient(
+      270deg,
+      rgba(14, 165, 233, 0.41) 10%,
+      rgba(232, 121, 249, 0.26) 90%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      360deg,
+      rgba(14, 165, 233, 0.41) 10%,
+      rgba(232, 121, 249, 0.26) 90%
+    );
+  }
+}
+
+
+.middle-blob {
+    background: linear-gradient(
+      0deg,
+      rgba(14, 165, 233, 0.41) 10%,
+      rgba(232, 121, 249, 0.26) 90%
+    );
+    background-size: 200% 200%; 
+    animation: spin 4s cubic-bezier(0.6, 0.04, 0.98, 0.335) infinite; 
+  }
+
